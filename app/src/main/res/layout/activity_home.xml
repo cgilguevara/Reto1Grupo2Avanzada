@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:id="@+id/home"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  tools:context=".HomeActivity"
+  android:padding="16dp" >
+
+  <ImageView
+    android:id="@+id/imageViewHeader"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:src="@drawable/login3"
+    android:layout_marginTop="0dp"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toEndOf="parent" />
+
+  <TextView
+    android:id="@+id/tvAppTitle"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="TODOS A LA PIZZA"
+    android:textSize="24sp"
+    android:textStyle="bold"
+    android:textColor="@color/white"
+    app:layout_constraintTop_toTopOf="parent"
+    android:layout_marginEnd="10dp"
+    app:layout_constraintEnd_toEndOf="parent"
+    android:layout_marginTop="36dp"/>
+
+  <Button
+    android:id="@+id/btnLogin"
+    android:layout_width="200dp"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="16dp"
+    android:text="Cerrar sesion"
+    android:textSize="20dp"
+    android:textColor="@color/blue"
+    android:backgroundTint="@color/btn_back"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintBottom_toTopOf="@+id/ivFooter" />
+
+  <Button
+    android:id="@+id/btnbuscar"
+    android:layout_width="200dp"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="16dp"
+    android:text="Buscar pizza"
+    android:textSize="20dp"
+    android:backgroundTint="@color/btn_next"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintBottom_toTopOf="@+id/btnLogin" />
+
+  <Button
+    android:id="@+id/btneditar"
+    android:layout_width="200dp"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="16dp"
+    android:text="Modificar pizza"
+    android:textSize="20dp"
+    android:backgroundTint="@color/btn_next"
+    app:layout_constraintEnd_toEndOf="@+id/btnbuscar"
+    app:layout_constraintStart_toStartOf="@+id/btnbuscar"
+    app:layout_constraintBottom_toTopOf="@+id/btnbuscar" />
+
+  <Button
+    android:id="@+id/btnAgregar"
+    android:layout_width="200dp"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="16dp"
+    android:text="Nueva pizza"
+    android:textSize="20dp"
+    android:backgroundTint="@color/btn_next"
+    app:layout_constraintEnd_toEndOf="@+id/btneditar"
+    app:layout_constraintStart_toStartOf="@+id/btneditar"
+    app:layout_constraintBottom_toTopOf="@+id/btneditar" />
+
+
+  <Button
+    android:id="@+id/btnMostrar"
+    android:layout_width="200dp"
+    android:layout_height="wrap_content"
+    android:text="Lista de pizzas"
+    android:backgroundTint="@color/btn_next"
+    android:textSize="20dp"
+    android:layout_marginBottom="16dp"
+    app:layout_constraintEnd_toEndOf="@+id/btnAgregar"
+    app:layout_constraintStart_toStartOf="@+id/btnAgregar"
+    app:layout_constraintBottom_toTopOf="@+id/btnAgregar" />
+
+  <!-- ListView -->
+
+
+  <!-- Pie de página -->
+  <ImageView
+    android:id="@+id/ivFooter"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:src="@drawable/header"
+    android:layout_marginBottom="-125dp"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

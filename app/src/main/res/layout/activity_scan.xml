@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:id="@+id/main"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  tools:context=".ScanActivity"
+  android:padding="16dp" >
+  <!-- Encabezado -->
+  <ImageView
+    android:id="@+id/ivHeader"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:src="@drawable/login3"
+    android:layout_marginTop="0dp"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"/>
+
+  <!-- TextView para el título de la aplicación -->
+  <TextView
+    android:id="@+id/tvAppTitle"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="BUSCAR PRODUCTOS"
+    android:textSize="24sp"
+    android:textColor="@color/white"
+    android:textStyle="bold"
+    app:layout_constraintTop_toTopOf="@id/ivHeader"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    android:layout_marginTop="26dp"/>
+
+  <!-- EditText para el nombre -->
+  <EditText
+    android:id="@+id/etlNombre"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="16dp"
+    android:layout_marginTop="16dp"
+    android:layout_marginEnd="16dp"
+    android:background="@color/txttransparncia"
+    android:hint="@string/hint_nombre"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/tvAppTitle" />
+
+  <!-- EditText para Ingredientes -->
+  <EditText
+    android:id="@+id/etlIngrediente"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="16dp"
+    android:layout_marginTop="8dp"
+    android:layout_marginEnd="16dp"
+    android:background="@color/txttransparncia"
+    android:hint="@string/hint_ingredientes"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/etlNombre" />
+
+  <!-- Botón para agregar producto -->
+  <Button
+    android:id="@+id/btnScan"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="16dp"
+    android:text="Buscar pizza"
+    android:textSize="20dp"
+    android:backgroundTint="@color/btn_next"
+    app:layout_constraintEnd_toEndOf="@+id/etlIngrediente"
+    app:layout_constraintStart_toStartOf="@+id/etlIngrediente"
+    app:layout_constraintTop_toBottomOf="@+id/etlIngrediente" />
+
+  <!-- TextView para "Base de Datos" -->
+  <TextView
+    android:id="@+id/tvDatabase"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="@string/tv_database"
+    android:textSize="18sp"
+    android:textStyle="bold"
+    app:layout_constraintTop_toBottomOf="@id/btnHome"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    android:layout_marginTop="16dp"/>
+
+  <!-- Botón para mostrar productos -->
+  <Button
+    android:id="@+id/btnHome"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="16dp"
+    android:text="Menú principal"
+    android:textSize="20dp"
+    android:textColor="@color/blue"
+    android:backgroundTint="@color/btn_back"
+    app:layout_constraintEnd_toEndOf="@+id/btnScan"
+    app:layout_constraintStart_toStartOf="@+id/btnScan"
+    app:layout_constraintTop_toBottomOf="@+id/btnScan" />
+
+  <!-- ListView -->
+  <ListView
+    android:id="@+id/listView"
+    android:layout_width="0dp"
+    android:layout_height="0dp"
+    android:layout_marginBottom="50dp"
+    android:background="@color/txttransparncia"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/tvDatabase" />
+
+  <!-- Pie de página -->
+  <ImageView
+    android:id="@+id/ivFooter"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:src="@drawable/header"
+    android:layout_marginBottom="-125dp"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

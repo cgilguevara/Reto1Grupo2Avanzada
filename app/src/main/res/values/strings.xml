@@ -1,0 +1,36 @@
+<resources>
+  <string name="app_name">Reto01_Pizzeria</string>
+  <!--  strings del activity_login -->
+  <string name="login_title">Bienvenidos todos a la pizza</string>
+  <string name="email_hint">Correo electrónico registrado</string>
+  <string name="password_hint">Contraseña</string>
+  <string name="login_button">Iniciar sesión</string>
+  <string name="register_button">Registrar</string>
+
+  <!--  strings del activity_home -->
+  <string name="home_view_title">Vista del Home</string>
+  <string name="firebase_examples_title">Ejemplos Firebase</string>
+  <string name="firestore_button">Firestore</string>
+  <string name="realtime_database_button">Realtime</string>
+  <string name="app_title">TODOS A LA PIZZERIA</string>
+  <string name="hint_nombre">Nombre pizza</string>
+  <string name="hint_ingredientes">Ingredientes</string>
+  <string name="btn_agregar_producto">Agregar producto</string>
+  <string name="tv_database">Opciones de pizza</string>
+  <string name="btn_mostrar_usuarios">Mostrar Pizzas</string>
+
+
+  <!--  Strings del activity_register-->
+  <string name="registration_title">Usuarios nuevos</string>
+  <string name="name_hint">Nombre</string>
+  <string name="new_email_hint">Correo electrónico</string>
+  -->
+  <!--   <string name="password_hint">Contraseña</string>  -->
+  <string name="register_button_text">Registrar</string>
+  <string name="login_button_text">Login</string>
+
+  <!--  Strings del activity_addr-->
+  <string name="btn_login">Regresar</string>
+  <string name="text_size_form">20dp</string>
+
+</resources>
